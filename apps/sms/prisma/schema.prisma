@@ -29,6 +29,7 @@ model Provider {
 
 model Customer {
   createdAt DateTime  @default(now())
+  email     String?
   firstName String?
   id        String    @id @default(auto()) @map("_id") @mongo.ObjectId
   lastName  String?
